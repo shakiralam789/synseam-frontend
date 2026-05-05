@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+build
+dist
+.env*.local
+.vercel
+.turbo
+.git
+.gitignore
+*.md
+LICENSE
+docker-compose.yml
+Dockerfile
