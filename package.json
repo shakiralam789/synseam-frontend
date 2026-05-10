@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "PORT=${PORT:-$(grep -v '^#' .env 2>/dev/null | grep '^PORT=' | cut -d '=' -f2 || echo 3000)} next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=${PORT:-$(grep -v '^#' .env 2>/dev/null | grep '^PORT=' | cut -d '=' -f2 || echo 3000)} next start",
     "lint": "eslint"
   },
   "dependencies": {
